@@ -23,77 +23,56 @@
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
   <body>
-    <header>
-      <!--  Header Logo -->
-      <img src="images/logo.svg" alt="Sunnyside Logo" class="logo" />
-      <!-- Hamburger Menu -->
-      <div class="hamburger-menu"></div>
-      <!---------- NAVIGATION BAR ----------->
-      <nav class="navBar">
-        <ul class="navList">
-          <li class="navItems"><a href="#about">About</a></li>
-          <li class="navItems"><a href="#services">Services</a></li>
-          <li class="navItems"><a href="#gallery">Projects</a></li>
-          <li class="navItems">
-            <button>
-              <a href="#contact">Contact</a>
-            </button>
-          </li>
-        </ul>
-        <!-- Main header -->
+    <!---------------- MAIN HEADER OF PAGE --------------->
+    <!-- Hero image div  -->
+    <div class="hero-background">
+      <header class="primary-header">
+        <!--  Header Logo -->
+        <div class="logo-container">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="Sunnyside Logo" class="logo" />
+          </a>
+        </div>
+        <!-- Hamburger Menu -->
+        <button id="hamburger" aria-controls="nav-menu">
+          <span class="sr-only" aria-expanded="false">Menu</span>
+        </button>
+        <!---- Navigation Bar---->
+        <nav id="navbar">
+          <ul id="nav-menu" data-visible="false" class="nav-menu">
+            <li class="nav-item about-link">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#gallery" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="contact-btn">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="header-info">
+        <!-- Primary header content -->
         <h1>We are creatives</h1>
         <img
           src="images/icon-arrow-down.svg"
           alt="Arrow pointed down"
           class="down-arrow"
         />
-      </nav>
-      <!-- Header Image  -->
-      <picture class="header-img">
-        <!-- Mobile header image -->
-        <source
-          media="(max-width:760px)"
-          srcset="images/mobile/image-header.jpg"
-        />
-        <!-- Desktop header image -->
-        <source
-          media="(min-width:761px)"
-          srcset="images/desktop/image-header.jpg"
-        />
-        <img
-          src="images/desktop/image-header.jpg"
-          alt=" A sliced orange with a turquoise background"
-          class="header-img_desktop"
-        />
-      </picture>
-    </header>
-    <!---- MAIN CONTENT OF PAGE ---->
+      </div>
+    </div>
+
+    <!---------------- MAIN CONTENT OF PAGE --------------->
     <main>
-      <!--------------- ABOUT SECTION --------------->
+      <!----------- ABOUT SECTION ----------->
       <section id="about">
         <div class="about-container">
-          <!------ Card One ------>
-          <div class="card">
-            <picture class="egg-img">
-              <!-- Mobile egg image  -->
-              <source
-                media="(max-width:760px)"
-                srcset="images/mobile/image-transform.jpg"
-              />
-              <!-- Desktop egg image  -->
-              <source
-                media="(min-width:761px)"
-                srcset="images/desktop/image-transform.jpg"
-              />
-              <img
-                src="images/desktop/image-transform.jpg"
-                alt=" An egg agasint a yellow background"
-                class="egg-img_desktop"
-              />
-            </picture>
-          </div>
-          <!------ Card Two ------>
-          <div class="card">
+          <!------ Card One: Transform div ------>
+          <div class="card white-card">
             <h2 class="about-heading">Transform your brand</h2>
             <p class="about-text">
               We are a full-service creative agency specializing in helping
@@ -102,28 +81,10 @@
             </p>
             <a href="#" class="learn-more">Learn More</a>
           </div>
-          <!------ Card Three ------>
-          <div class="card">
-            <picture class="cup-img">
-              <!-- Mobile cup image  -->
-              <source
-                media="(max-width:760px)"
-                srcset="images/mobile/image-stand-out.jpg"
-              />
-              <!-- Desktop cup image -->
-              <source
-                media="(min-width:761px)"
-                srcset="images/desktop/image-stand-out.jpg"
-              />
-              <img
-                src="images/desktop/image-stand-out.jpg"
-                alt="A pink cup against a pink background"
-                class="cup-img_desktop"
-              />
-            </picture>
-          </div>
-          <!------ Card Four ------>
-          <div class="card">
+          <!------ Card Two: Egg image div ------>
+          <div class="card egg-img"></div>
+          <!------ Card Three: Standout div ------>
+          <div class="card white-card">
             <h2 class="about-heading">Stand out to the right audience</h2>
             <p class="about-text">
               Using a collaborative formula of designers, researchers,
@@ -132,56 +93,24 @@
             </p>
             <a href="#" class="learn-more">Learn More</a>
           </div>
+          <!------ Card Four: Cup image div ------>
+          <div class="card cup-img"></div>
         </div>
       </section>
       <!--------------- SERVICES SECTION --------------->
       <section id="services">
         <div class="services-container">
-          <!------ Card Five ------>
-          <div class="card">
-            <picture class="cherry-img">
-              <!-- Mobile cherry image -->
-              <source
-                media="(max-width:761px)"
-                srcset="images/mobile/image-graphic-design.jpg"
-              />
-              <!-- Desktop cherry image -->
-              <source
-                media="(min-width:760px)"
-                srcset="images/desktop/image-graphic-design.jpg"
-              />
-              <img
-                src="images/desktop/image-graphic-design.jpg"
-                alt="Cherries against a green background"
-                class="cherry-img_desktop"
-              />
-            </picture>
-            <h3 class="services-heading">Graphic Dseign</h3>
+          <!------ Card Five: Cherry image div ------>
+          <div class="card cherry-img">
+            <h3 class="services-heading">Graphic Design</h3>
             <p class="services-text">
               Great design makes you memorable. We deliver artwork that
               underscores your brand message and captures potential clients’
               attention.
             </p>
           </div>
-          <!------ Card Six ------>
-          <div class="card">
-            <picture class="clementine-img">
-              <!-- Mobile clementine image -->
-              <source
-                media="(max-width:761px)"
-                srcset="images/mobile/image-photography.jpg"
-              />
-              <!-- Desktop clementine image -->
-              <source
-                media="(min-width:760px)"
-                srcset="images/desktop/image-photography.jpg"
-              />
-              <img
-                src="images/desktop/image-photography.jpg"
-                alt="A clementine against a turquoise background"
-                class="clementine-img_desktop"
-              />
-            </picture>
+          <!------ Card Six: Clementine image div  ------>
+          <div class="card clementine-img">
             <h3 class="services-heading">Photography</h3>
             <p class="services-text">
               Increase your credibility by getting the most stunning,
@@ -205,7 +134,7 @@
               We put our trust in Sunnyside and they delivered, making sure our
               needs were met and deadlines were always hit.
             </p>
-            <p class="testimonial-name">Emily R.</p>
+            <h4 class="testimonial-name">Emily R.</h4>
             <p class="testimonial-role">Marketing Director</p>
           </div>
           <!---- Testimonial Two ---->
@@ -219,7 +148,7 @@
               Sunnyside’s enthusiasm coupled with their keen interest in our
               brand’s success made it a satisfying and enjoyable experience.
             </p>
-            <p class="testimonial-name">Thomas S.</p>
+            <h4 class="testimonial-name">Thomas S.</h4>
             <p class="testimonial-role">Chief Operating Officer</p>
           </div>
           <!---- Testimonial Three ---->
@@ -233,7 +162,7 @@
               Incredible end result! Our sales increased over 400% when we
               worked with Sunnyside. Highly recommended!
             </p>
-            <p class="testimonial-name">Jennie F.</p>
+            <h4 class="testimonial-name">Jennie F.</h4>
             <p class="testimonial-role">Business Owner</p>
           </div>
         </div>
@@ -241,86 +170,14 @@
       <!--------------- PROJECTS SECTION --------------->
       <section id="gallery">
         <div class="gallery-container">
-          <!---- Card 7 ---->
-          <div class="gallery-card">
-            <picture class="milk-img">
-              <!-- Mobile milk bottles image -->
-              <source
-                media="(max-width:761px)"
-                srcset="images/mobile/image-gallery-milkbottles.jpg"
-              />
-              <!-- Desktop milk bottles image -->
-              <source
-                media="(min-width:760px)"
-                srcset="images/desktop/image-gallery-milkbottles.jpg"
-              />
-              <img
-                src="images/desktop/image-gallery-milkbottles.jpg"
-                alt="Milk bottles a blue sky and clouds"
-                class="milk-img_desktop"
-              />
-            </picture>
-          </div>
-          <!---- Card 8 ---->
-          <div class="gallery-card">
-            <picture class="orange-img">
-              <!-- Mobile sliced orange image -->
-              <source
-                media="(max-width:761px)"
-                srcset="images/mobile/image-gallery-orange.jpg"
-              />
-              <!-- Desktop sliced orange image -->
-              <source
-                media="(min-width:760px)"
-                srcset="images/desktop/image-gallery-orange.jpg"
-              />
-              <img
-                src="images/desktop/image-gallery-orange.jpg"
-                alt="Sliced orange on a plate"
-                class="orange-img_desktop"
-              />
-            </picture>
-          </div>
-          <!---- Card 9 ---->
-          <div class="gallery-card">
-            <picture class="cone-img">
-              <!-- Mobile ice cream cone image -->
-              <source
-                media="(max-width:761px)"
-                srcset="images/mobile/image-gallery-cone.jpg"
-              />
-              <!-- Desktop ice cream cone image -->
-              <source
-                media="(min-width:760px)"
-                srcset="images/desktop/image-gallery-cone.jpg"
-              />
-              <img
-                src="images/desktop/image-gallery-cone.jpg"
-                alt="Sliced orange on a plate"
-                class="cone-img_desktop"
-              />
-            </picture>
-          </div>
-          <!---- Card 10 ---->
-          <div class="gallery-card">
-            <picture class="sugarcubes-img">
-              <!-- Mobile sugarcubes image -->
-              <source
-                media="(max-width:761px)"
-                srcset="images/mobile/image-gallery-sugar-cubes.jpg"
-              />
-              <!-- Desktop sugarcubes image -->
-              <source
-                media="(min-width:760px)"
-                srcset="images/desktop/image-gallery-sugarcubes.jpg"
-              />
-              <img
-                src="images/desktop/image-gallery-sugarcubes.jpg"
-                alt="Stacked sugarcubes"
-                class="sugarcubes-img_desktop"
-              />
-            </picture>
-          </div>
+          <!---- Card 7: Milk image div  ---->
+          <div class="gallery-card milk-img"></div>
+          <!---- Card 8: Sliced orange image div  ---->
+          <div class="gallery-card orange-img"></div>
+          <!---- Card 9: Ice cream cone image div ---->
+          <div class="gallery-card cont-img"></div>
+          <!---- Card 10: Sugar cubes image div ---->
+          <div class="gallery-card sugarcubes-img"></div>
         </div>
       </section>
     </main>
@@ -340,15 +197,15 @@
         </a>
       </div>
       <!-- Footer menu links -->
-      <ul class="footer-menu-list">
+      <ul class="footer-menu">
         <li class="footer-menu-items">
-          <a href="#about">About</a>
+          <a href="#about" class="footer-menu-link">About</a>
         </li>
         <li class="footer-menu-items">
-          <a href="#services">Services</a>
+          <a href="#services" class="footer-menu-link">Services</a>
         </li>
         <li class="footer-menu-items">
-          <a href="#gallery">Projects</a>
+          <a href="#gallery" class="footer-menu-link">Projects</a>
         </li>
       </ul>
       <div class="social-icons">
@@ -405,5 +262,7 @@
         >
       </div>
     </footer>
+    <!-- JavaScript Link -->
+    <script src="toggleHamburger.js"></script>
   </body>
 </html>
