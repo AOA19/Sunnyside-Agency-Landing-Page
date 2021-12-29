@@ -1,6 +1,7 @@
 const hamburger = document.querySelector("#hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
+const contactBtn = document.querySelectorAll(".contact-btn");
 
 // Hamburger menu toggle function:
 hamburger.addEventListener("click", () => {
@@ -16,6 +17,7 @@ hamburger.addEventListener("click", () => {
 
 // Function to close the hamburger menu when the links are clicked:
 navLink.forEach((n) => n.addEventListener("click", closeMenu));
+contactBtn.forEach((n) => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
   navMenu.setAttribute("data-visible", false);
