@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/AOA19/SunnysideAgencyLandingPage.git)
-- Live Site URL: [](https://aoa19.github.io/SunnysideAgencyLandingPage/)
+- [Solution URL](https://github.com/AOA19/SunnysideAgencyLandingPage.git)
+- [Live Site URL](https://aoa19.github.io/SunnysideAgencyLandingPage/)
 
 ## My process
 
