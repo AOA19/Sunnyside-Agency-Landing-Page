@@ -13,6 +13,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Attributes](#attributes)
 
 ## Overview
 
@@ -56,3 +57,9 @@ I learned how to create a mobile hamburger menu using JavaScript. I learned how 
 
 - Github: [@AOA19](https://github.com/AOA19)
 - Frontend Mentor: [@AOA19](https://www.frontendmentor.io/profile/AOA19)
+
+
+## Attributes
+
+- Fonts: [Font Awesome Fonts](https://fontawesome.com/)
+  - [Font Awesome Lincense](https://fontawesome.com/license)
