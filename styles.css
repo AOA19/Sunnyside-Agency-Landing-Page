@@ -7,9 +7,11 @@ font-family: 'Fraunces', serif;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-size: 18px;
 }
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -373,7 +375,7 @@ p {
 /* Social media icon styling */
 .social-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 25% 20%;
   align-items: center;
 }
@@ -401,7 +403,7 @@ p {
 }
 
 /*** Navigation bar styling for Mobile ***/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .nav-menu {
     display: none;
     text-align: center;
@@ -467,8 +469,62 @@ p {
   transition: 0.3s;
 }
 
+/******************************************* TABLET STYLING *******************************************/
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .nav-menu[data-visible="true"] {
+    height: 33%;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+
+  .egg-img,
+  .cup-img {
+    height: 50vh;
+  }
+
+  .about-heading {
+    font-size: 35px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  .about-text {
+    font-size: 25px;
+    padding: 0 40px 50px 40px;
+  }
+
+  .learn-more {
+    font-size: 20px;
+  }
+
+  .cherry-img,
+  .clementine-img {
+    background-position: top;
+    height: 90vh;
+  }
+
+  .services-heading {
+    font-size: 35px;
+    padding-top: 670px;
+  }
+
+  .services-text {
+    font-size: 20px;
+  }
+
+  .gallery-card {
+    height: 35vh;
+  }
+}
+
 /******************************************* DESKTOP STYLING *******************************************/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
   /*********** HEADER STYLING ***********/
   .hero-background {
     background-image: url(images/desktop/image-header.jpg);
