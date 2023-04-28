@@ -444,7 +444,7 @@ p {
     background-color: #ffffff;
     clip-path: polygon(90% 10%, 100% 0, 100% 100%, 0 100%, 0 10%);
     display: block;
-    height: 42%;
+    height: 55%;
     left: 8%;
     position: absolute;
     top: 9%;
@@ -474,10 +474,7 @@ p {
 
 /******************************************* TABLET STYLING *******************************************/
 @media only screen and (min-width: 600px) and (max-width: 768px) {
-  .nav-menu[data-visible="true"] {
-    height: 33%;
-  }
-
+  
   .nav-link {
     font-size: 20px;
   }
