@@ -27,7 +27,7 @@ Users should be able to:
 ### Screenshot
 
 ![](Screenshot/Sunnyside-Desktop-Screenshot.png)
-![](Screenshot/Sunnyside-Mobile-Screenshot.png)
+
 
 ### Links
 
